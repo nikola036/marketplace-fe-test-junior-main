@@ -1,0 +1,28 @@
+<form [formGroup]="taskForm" class="form">
+  <div class="form__input-container">
+    <input
+      type="text"
+      placeholder="Write your task here..."
+      formControlName="task"
+      class="form__input {{
+        taskForm.controls['task'].errors?.['taskExists'] || taskForm.controls['task'].errors?.['pattern'] ? 'form__input--invalid' : ''
+      }}"
+      name="task"
+    />
+    <label
+      *ngIf="taskForm.controls['task'].invalid"
+      for="task"
+      class="form__error-label"
+      >{{ getErrorMessage() }}</label
+    >
+  </div>
+  <button
+    mat-stroked-button
+    color="primary"
+    class="task__button"
+    type="button"
+    (click)="addTask()"
+  >
+    ADD
+  </button>
+</form>

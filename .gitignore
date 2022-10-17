@@ -1,0 +1,60 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+/mochawesome-report
+/coverage
+/ts-lint-report
+
+# dot folders
+/.scanner*
+/.sass-cache
+
+# dependencies
+/node_modules
+
+# misc folders
+/cypress/scree*
+/cypress/vide*
+/cypress/results*
+/connect.lock
+/typings
+/ssl
+/junit
+
+# ides and editors
+.project
+.classpath
+.vscode
+.idea
+.c9
+.settings
+*.launch
+*.sublime-workspace
+*.code-workspace
+
+# logs
+*.log
+
+# system
+.DS_Store
+Thumbs.db
+
+# Storybook
+/storybook-static
+documentation.json
+/.storybook/scss-variables.json
+/.storybook/icon-names.json
+
+# other files
+cypress/integration/user/test2.js
+*/company.txt
+cypress/fixtures/company.txt
+cypress/results/
+cypress/snapshots/actual
+cypress/snapshots/diff
+*/results/
+cypress/reports/
+src/TESTS.xml
+/.env
+cypress.env.json

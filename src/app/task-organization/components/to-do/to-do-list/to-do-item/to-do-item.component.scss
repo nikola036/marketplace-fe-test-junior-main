@@ -1,0 +1,28 @@
+@import "/src/assets/scss/abstracts/variables.scss";
+
+.item__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 4fr 1fr;
+  padding: 0 10px;
+  border-radius: 10px;
+  position: relative;
+  &:hover {
+    background-color: var(--light-gray-color);
+    cursor: pointer;
+  }
+}
+
+.item__button {
+  display: none;
+  width: 100px;
+}
+
+.item__text {
+  font-size: 20px;
+}
+
+.item__container:hover .item__button,
+.item__button:hover {
+  display: unset;
+}

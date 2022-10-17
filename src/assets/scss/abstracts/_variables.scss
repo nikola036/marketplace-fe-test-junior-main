@@ -1,0 +1,15 @@
+:root {
+  // Common colors:
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --red-color: #ff0000;
+  --gray-color: #808080;
+  --light-gray-color: #f7f7f7;
+
+  /******************* LIGHT THEME *******************/
+  --primary-text-color: var(--black-color);
+  --primary-bg-color: var(--white-color);
+  --outline-color: var(--black-color);
+  --error-color: var(--red-color);
+}

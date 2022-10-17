@@ -1,0 +1,38 @@
+@import "/src/assets/scss/abstracts/variables.scss";
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  position: fixed;
+  @media screen and (max-width: 800px) {
+    position: relative;
+  }
+}
+.form__input-container {
+  position: relative;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+  }
+}
+.form__input {
+  height: 30px;
+  border: none;
+  outline: 1px solid var(--gray-color);
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+  &--invalid {
+    outline: 2px solid var(--error-color);
+  }
+}
+
+.form__error-label {
+  color: var(--error-color);
+  font-size: 12px;
+  position: absolute;
+  top: 40px;
+  left: 5px;
+}
